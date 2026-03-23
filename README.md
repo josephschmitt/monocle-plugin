@@ -12,17 +12,22 @@ Terminal-based code review companion for Claude Code. Run Monocle alongside Clau
 
 ## Setup
 
-1. Install the plugin:
+1. Add the marketplace:
    ```
-   /plugin install monocle@claude-plugins-official
-   ```
-
-2. Start Claude Code with the channel enabled:
-   ```
-   claude --channels plugin:monocle@claude-plugins-official
+   /plugin marketplace add josephschmitt/monocle-plugin
    ```
 
-3. In a separate terminal, start Monocle in the same repo:
+2. Install the plugin:
+   ```
+   /plugin install monocle@monocle-plugin
+   ```
+
+3. Start Claude Code with the channel enabled:
+   ```
+   claude --channels plugin:monocle@monocle-plugin
+   ```
+
+4. In a separate terminal, start Monocle in the same repo:
    ```
    monocle
    ```
