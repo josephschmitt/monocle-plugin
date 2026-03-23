@@ -4,9 +4,13 @@
   "license": "Apache-2.0",
   "type": "module",
   "scripts": {
-    "start": "bun install --no-summary && bun server.ts"
+    "start": "bun install --no-summary && bun server.ts",
+    "build": "bun run build.mjs"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
   }
 }
